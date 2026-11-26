@@ -446,7 +446,7 @@ Cuando tengas el prompt de la locación y el bloque de continuidad, generá dire
       <div class="shot"><div class="ts">16–18 s</div><div class="pl">Producto</div>Lucía saca la bolsa y la muestra.</div>
     </div>
     <div class="note"><b>Regla de oro:</b> un solo personaje habla por plano. Si dos hablan en el mismo plano, el modelo mezcla las voces y tenés que regenerar.</div>
-    <p class="use"><b>Cómo usarlo:</b> pegalo tal cual en el mismo chat. Te muestra el guion sin generar nada. Si querés cambiar algo, decíselo. Cuando esté bien, escribí <b>"aprobado"</b> y empieza a generar la escena 01. Después de cada escena, revisala y escribí <b>"ok"</b> para que siga.</p>
+    <p class="use"><b>Cómo usarlo:</b> pegalo tal cual en el mismo chat. Te muestra el guion sin generar nada. Si querés cambiar algo, decíselo. Cuando esté bien, escribí <b>"aprobado"</b> y empieza a generar la escena 01. Después de cada escena en 480p, revisala y escribí <b>"ok"</b> para que siga. Cuando aprobás la última, Claude une todo en un <b>video de prueba en 480p</b>. Si te gusta, escribí <b>"ok"</b> y genera el <b>video final en 1080p</b> para descargar.</p>
     <div class="pc"><div class="pc-top"><div class="tt"><span>Prompt 06</span>Guion y video<span class="tl">· Claude + Higgsfield</span></div><button class="copy">Copiar</button></div><pre>Ahora armá el anuncio con todo lo que ya tenemos en este chat: el ángulo elegido y su situación cotidiana, los personajes con sus fichas y voces, la locación aprobada con su bloque de continuidad y las fotos del producto.
 
 1. GUION PARA APROBAR. No generes nada todavía. Mostrame:
@@ -457,8 +457,12 @@ Cuando tengas el prompt de la locación y el bloque de continuidad, generá dire
 
 2. CUANDO TE DIGA "APROBADO": escribí el prompt de la escena 01 en inglés, empezando con el bloque de continuidad y nombrando personajes, locación y producto con @. Generala en Higgsfield con Seedance 2.5 en 480p, usando como referencias las fichas animadas con voz, la locación aprobada y las fotos del producto.
 
-3. ESPERÁ MI OK. Si la apruebo, generala igual en 1080p y seguí con la escena siguiente de la misma forma, sumando capturas de la escena anterior como referencia para mantener la continuidad. Si algo falla, rehacé solo el fragmento que te indique, primero en 480p.</pre></div>
-    <div class="ask"><div class="ask-top"><span>Qué revisar en cada paso</span></div><div class="ask-chk" style="border-top:0"><b>En el guion:</b> que se entienda la creencia y el giro, que hable un solo personaje por plano y que el producto aparezca solo al final.<br><b>En cada escena (480p):</b> diálogo, voces con su acento, que el lugar sea el mismo y que la etiqueta del producto se lea. Si está bien, "ok". Si no, decile qué falló.</div></div>
+3. ESPERÁ MI OK EN CADA ESCENA. Si la apruebo, seguí con la escena siguiente de la misma forma, también en 480p, sumando capturas de la escena anterior como referencia para mantener la continuidad. Si algo falla, rehacé solo el fragmento que te indique, en 480p.
+
+4. VIDEO DE PRUEBA EN 480p. Cuando todas las escenas estén aprobadas, unilas en orden en un solo video en Higgsfield: cortá los silencios entre escenas, dejá el producto al final con la etiqueta legible, 9:16, entre 15 y 20 segundos. Dame el link para verlo y esperá mi OK.
+
+5. VIDEO FINAL EN 1080p. Cuando apruebe el de 480p, generá todas las escenas en 1080p con los mismos prompts y referencias, unilas igual que en la prueba y dame el link de descarga del video final.</pre></div>
+    <div class="ask"><div class="ask-top"><span>Qué revisar en cada paso</span></div><div class="ask-chk" style="border-top:0"><b>En el guion:</b> que se entienda la creencia y el giro, que hable un solo personaje por plano y que el producto aparezca solo al final.<br><b>En cada escena (480p):</b> diálogo, voces con su acento, que el lugar sea el mismo y que la etiqueta del producto se lea. Si está bien, "ok". Si no, decile qué falló.<br><b>En el video de prueba (480p):</b> que las escenas estén en orden, sin silencios largos entre una y otra, y que termine en el producto. Es el último control antes de gastar en 1080p.</div></div>
 
     <h3><small>Ejemplo</small>Así arma Claude cada escena</h3>
     <p>No tenés que copiar nada de acá: es para que veas qué escribe Claude por dentro y qué referencias usa. Este ejemplo es de otro anuncio de 18 segundos.</p>
@@ -523,7 +527,8 @@ Change only: <span class="ph">[EL CAMBIO, ej: "@Lucia says 'No me hincha nada' i
 Everything else must stay identical to the approved frames: wardrobe, pose, light and position of every object.</pre></div>
     <div class="ask"><div class="ask-top"><span>Después pedile a Claude</span><button class="copy">Copiar</button></div><pre>Rehacé solo este fragmento en Higgsfield con Seedance 2.5, primero en 480p, con las mismas referencias y las capturas aprobadas.</pre><div class="ask-chk"><b>Revisá antes de seguir:</b> el segundo exacto que estaba mal. Si quedó bien, pedile la versión en 1080p.</div></div>
 
-    <h3><small>Montaje</small>Edición en CapCut</h3>
+    <h3><small>Opcional</small>Retoques en CapCut</h3>
+    <p>Claude ya te entrega el video final unido. Si querés sumarle algo más, como subtítulos o sonido ambiente, hacelo en CapCut:</p>
     <ul class="terms">
       <li><b>Orden:</b> importá los clips y reemplazá los fragmentos corregidos.</li>
       <li><b>Ritmo:</b> recortá todos los silencios. En 18 segundos no puede sobrar ni medio segundo.</li>
