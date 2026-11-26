@@ -268,24 +268,24 @@ Tu trabajo: encontrar la creencia que frena la compra y el mensaje que la cambia
 Reglas: no inventes beneficios. Si algo no está en lo que te di ni en el empaque, no lo uses. Nada de promesas médicas ni resultados absolutos.</pre></div>
     <h3><small>Prompt 02</small>Del ángulo a los recursos</h3>
     <p>Cuando elegiste el ángulo, en la misma conversación pedile a Claude todo lo que vas a necesitar en el Paso 2: los personajes con nombre, edad, aspecto, vestimenta y voz, el prompt de la foto base de cada uno, la frase para pedir la locación, el momento del producto y la historia resumida.</p>
-    <p class="use"><b>Cómo usarlo:</b> pegalo en el mismo chat del Prompt 01, justo después de que te dé los 3 ángulos. Todo lo que te devuelva es la base para crear los personajes en el Paso 2, en ese mismo chat.</p>
-    <div class="pc"><div class="pc-top"><div class="tt"><span>Prompt 02</span>Del ángulo a los recursos<span class="tl">· Claude</span></div><button class="copy">Copiar</button></div><pre>Me quedo con el ángulo <span class="ph">[NÚMERO DEL ÁNGULO o "el que recomendaste"]</span>.
+    <p class="use"><b>Cómo usarlo:</b> pegalo tal cual en el mismo chat del Prompt 01, justo después de que te dé los 3 ángulos. Si preferís otro ángulo que no sea el recomendado, cambiá solo la primera línea. Todo lo que te devuelva es la base para crear los personajes en el Paso 2, en ese mismo chat.</p>
+    <div class="pc"><div class="pc-top"><div class="tt"><span>Prompt 02</span>Del ángulo a los recursos<span class="tl">· Claude</span></div><button class="copy">Copiar</button></div><pre>Me quedo con el ángulo que recomendaste (si quiero otro, te lo digo).
 Con ese ángulo y su situación cotidiana, armame todo lo que necesito para el Paso 2, listo para copiar.
 
 1. PERSONAJES (2 o 3). Para cada uno:
-   - Nombre común en <span class="ph">[PAÍS DEL PÚBLICO]</span> y edad.
+   - Nombre común en el país del público y edad.
    - Rol en la historia: quién usa el producto, quién trae la creencia y quién reacciona.
    - Aspecto: contextura, pelo, rasgos y estilo. Que no se parezca a nadie famoso.
    - Vestimenta para la ficha, con colores. Que no sea del color del empaque y que cada personaje se distinga de los otros.
-   - Voz: habla en el idioma de <span class="ph">[PAÍS DEL PÚBLICO]</span> con el acento de ese país (ej: español con acento mexicano), más edad, tono, timbre, actitud y ritmo. Escribí esta descripción en inglés solo porque va pegada dentro del prompt de video, pero el personaje habla en el idioma y con el acento del país.
+   - Voz: habla en el idioma del país del público con el acento de ese país (ej: español con acento mexicano), más edad, tono, timbre, actitud y ritmo. Escribí esta descripción en inglés solo porque va pegada dentro del prompt de video, pero el personaje habla en el idioma y con el acento del país.
    - Su frase de presentación para el prompt de voz, en el idioma del país y como se habla ahí.
-   - Prompt para generar su foto base (en inglés, porque los modelos de imagen lo entienden mejor): una persona que se vea de <span class="ph">[PAÍS DEL PÚBLICO]</span>, retrato realista tipo foto de celular, luz natural, piel con poros e imperfecciones, sin retoque.
+   - Prompt para generar su foto base (en inglés, porque los modelos de imagen lo entienden mejor): una persona que se vea del país del público, retrato realista tipo foto de celular, luz natural, piel con poros e imperfecciones, sin retoque.
 2. LOCACIÓN: la frase lista para pedirle a la skill de locaciones (lugar, horario, cantidad de personajes, qué pasa y país).
 3. PRODUCTO: en qué momento aparece, dónde está guardado y cómo lo muestra el personaje.
-4. HISTORIA en 5 líneas para un video de <span class="ph">[DURACIÓN, ej: 18]</span> segundos: inicio, giro y cierre con el producto. Los diálogos, en el idioma y con las expresiones de <span class="ph">[PAÍS DEL PÚBLICO]</span>.
+4. HISTORIA en 5 líneas para un video de entre 15 y 20 segundos: inicio, giro y cierre con el producto. Los diálogos, en el idioma y con las expresiones del país del público.
 
 Reglas: mismo público y mismos beneficios que antes. No inventes nada que no esté en lo que te di o en el empaque.</pre></div>
-    <div class="ask"><div class="ask-top"><span>Después pedile a Claude</span><button class="copy">Copiar</button></div><pre>Generá en Higgsfield con GPT Image 2 la foto base de [NOMBRE DEL PERSONAJE 1], con el prompt que armaste. De a un personaje: cuando la apruebe, seguís con el siguiente.</pre><div class="ask-chk"><b>Revisá antes de seguir:</b> que cada persona se vea del país de tu público, con piel real, y que las tres se distingan bien entre sí.</div></div>
+    <div class="ask"><div class="ask-top"><span>Después pedile a Claude</span><button class="copy">Copiar</button></div><pre>Generá en Higgsfield con GPT Image 2 la foto base de cada personaje, con los prompts que armaste. Empezá por el primero y esperá mi aprobación antes de pasar al siguiente.</pre><div class="ask-chk"><b>Revisá antes de seguir:</b> que cada persona se vea del país de tu público, con piel real, y que las tres se distingan bien entre sí.</div></div>
     <div class="note"><b>Por qué una tienda de novias:</b> si el ángulo es "no te hincha", la historia tiene que pasar donde a una mujer más le importa cómo le queda la ropa.</div>
   </section>
 
@@ -309,7 +309,7 @@ Panel 2 (center): full body, front view, head to toe with the feet fully visible
 Panel 3 (right): full body, back view, head to toe with the feet fully visible, same pose and the same scale as the front view, so the two full-body panels line up at the head and feet. <span class="ph">[QUÉ SE VE DE ESPALDAS: PELO, ESPALDA DE LA ROPA, CALZADO]</span> clearly visible from behind.
 
 Same person, same outfit and same hairstyle in all three panels. Exactly one person per panel, no duplicates, no mirrors, no text, no labels, no logos, no watermark.</pre></div>
-    <div class="ask"><div class="ask-top"><span>Después pedile a Claude</span><button class="copy">Copiar</button></div><pre>Completá los corchetes con lo que se ve en la foto base de [NOMBRE DEL PERSONAJE] y generá su ficha en Higgsfield con GPT Image 2, usando esa foto base como referencia.</pre><div class="ask-chk"><b>Revisá antes de seguir:</b> la misma cara en los 3 paneles, los pies visibles, el fondo gris liso y nada de objetos. Después repetí con el siguiente personaje.</div></div>
+    <div class="ask"><div class="ask-top"><span>Después pedile a Claude</span><button class="copy">Copiar</button></div><pre>Completá los corchetes de este prompt con lo que se ve en la foto base de cada personaje y generá las fichas en Higgsfield con GPT Image 2, usando cada foto base como referencia. Empezá por el primero y esperá mi aprobación antes de pasar al siguiente.</pre><div class="ask-chk"><b>Revisá antes de seguir:</b> la misma cara en los 3 paneles, los pies visibles, el fondo gris liso y nada de objetos. Después repetí con el siguiente personaje.</div></div>
 
     <p>Con la ficha lista, le das voz y movimiento. Animás la ficha entera: el panel del rostro habla y los otros dos solo respiran y se mueven. Esa sola referencia le enseña al modelo cómo se ve y cómo suena el personaje, y en las escenas la voz sale consistente.</p>
     <p class="use"><b>Cómo usarlo:</b> en el mismo chat, pegá el prompt y pedile a Claude: <i>"Completá los corchetes con la voz de este personaje y animá su ficha en Higgsfield con Seedance 2.5"</i>. Lo que cambia entre personajes es la expresión y la voz: cada una tiene que sonar distinta.</p>
@@ -324,7 +324,7 @@ Center panel (full body, front): <span class="ph">[her/his]</span> mouth stays c
 Right panel (full body, back): <span class="ph">[she/he]</span> stands relaxed facing away, breathing naturally, shifting <span class="ph">[her/his]</span> weight slightly and turning <span class="ph">[her/his]</span> head a few degrees to the side, <span class="ph">[her/his]</span> hair moving gently. The camera in this panel slowly tilts down from <span class="ph">[her/his]</span> hair and <span class="ph">[PARTE DE ARRIBA DE LA ROPA]</span> to <span class="ph">[PARTE DE ABAJO Y CALZADO]</span>.
 
 All three panels move at the same time, smooth and subtle. Only the left panel speaks. Audio: only <span class="ph">[her/his]</span> voice, no music, no background noise. No text, no logos.</pre></div>
-    <div class="ask"><div class="ask-top"><span>Después pedile a Claude</span><button class="copy">Copiar</button></div><pre>Completá los corchetes con los datos de [NOMBRE DEL PERSONAJE] que armaste en el Prompt 02 y generá en Higgsfield con Seedance 2.5 el video de voz y movimiento, usando su ficha como referencia.</pre><div class="ask-chk"><b>Revisá antes de seguir:</b> que solo hable el panel del rostro, que la voz tenga el acento del país, que la frase se entienda y que suene distinta a los otros personajes. Si está bien: "Aprobado, ahora generá el de [SIGUIENTE PERSONAJE]".</div></div>
+    <div class="ask"><div class="ask-top"><span>Después pedile a Claude</span><button class="copy">Copiar</button></div><pre>Completá los corchetes de este prompt con los datos de cada personaje que armaste en el Prompt 02 y generá en Higgsfield con Seedance 2.5 el video de voz y movimiento de cada uno, usando su ficha como referencia. Empezá por el primero y esperá mi aprobación antes de pasar al siguiente.</pre><div class="ask-chk"><b>Revisá antes de seguir:</b> que solo hable el panel del rostro, que la voz tenga el acento del país, que la frase se entienda y que suene distinta a los otros personajes. Si está bien, escribile "Aprobado, seguí con el siguiente".</div></div>
 
     <h3><small>Ejemplo real</small>Los 3 personajes del creativo 01</h3>
     <p>Estos son los prompts exactos que usé para el creativo de la portada. Elegí un personaje para ver sus dos prompts.</p>
@@ -411,9 +411,9 @@ All three panels move at the same time, smooth and subtle. Only the left panel s
 
     <h3><small>Recurso 02</small>Locación</h3>
     <p>La locación es una imagen de referencia, no un fondo lindo: se usa en todas las escenas. Describís el lugar en una frase y la skill te arma el set vacío con luz, materiales, lente y colores que hacen contraste con tu producto. Además te da un bloque de continuidad para pegar en cada escena.</p>
-    <p class="use"><b>Cómo usarlo:</b> con la <a href="#skill">skill instalada</a>, pegá esto en el mismo chat y cambiá el lugar por el tuyo. Si ya pediste el Prompt 02, usá la frase de locación que te dio.</p>
-    <div class="pc"><div class="pc-top"><div class="tt"><span>Prompt 05</span>Pedir la locación<span class="tl">· Claude + skill</span></div><button class="copy">Copiar</button></div><pre>Usá la skill de locaciones: necesito la locación para mi anuncio, <span class="ph">[LUGAR, ej: el vestidor de un estudio de pilates boutique]</span>, <span class="ph">[HORARIO, ej: de día]</span>, que se vea <span class="ph">[NIVEL, ej: premium]</span> y que quepan <span class="ph">[CANTIDAD]</span> personas.
-Te adjunto la foto del producto.</pre></div>
+    <p class="use"><b>Cómo usarlo:</b> con la <a href="#skill">skill instalada y activada</a>, pegalo tal cual en el mismo chat. Claude usa la locación que definió en el Prompt 02 y la foto del producto que adjuntaste al principio.</p>
+    <div class="pc"><div class="pc-top"><div class="tt"><span>Prompt 05</span>Pedir la locación<span class="tl">· Claude + skill</span></div><button class="copy">Copiar</button></div><pre>Usá la skill de locaciones. Armame la locación de este anuncio con lo que definiste en la parte LOCACIÓN del Prompt 02: lugar, horario, cantidad de personajes, qué pasa y país del público.
+Usá la foto del producto que te adjunté al principio de este chat para elegir los colores, y entregame el prompt de la locación y el bloque de continuidad.</pre></div>
     <p class="use"><b>Resultado:</b> el prompt que devolvió la skill para este anuncio. Pedile a Claude que lo genere en Higgsfield con GPT Image 2, formato 9:16, 2K.</p>
     <div class="pc"><div class="pc-top"><div class="tt"><span>Prompt 06</span>Locación: tienda de novias<span class="tl">· GPT Image 2</span></div><button class="copy">Copiar</button></div><pre>Photorealistic photograph of an empty bridal boutique fitting area in late morning, calm and intimate, room for three people. Vertical frame shot from just inside the entrance in a three-quarter view, lens at 1.45 m, 30mm full-frame equivalent, f/7, level horizon and straight verticals, the edge of a cream doorframe entering the left border. Warm 3000K LED strips hidden behind the mirror and along the ceiling cove wash the walls softly, the strips never visible as lines; diffused daylight from a tall frosted window on the far wall fills the room, the side near camera about one stop darker, soft open shadows. An open stretch of pale oak floor about three meters wide sits between the sofa and the mirror. On the dominant wall, a tall triple full-length mirror in a thin brushed brass frame, reflecting only the bare opposite wall and the curtain. Beside it, a fitting booth closed by a heavy dusty-rose velvet curtain that falls slightly unevenly. Facing the mirror, a curved two-seat sofa in sage green velvet with a soft dent on one cushion, and a small round side table in walnut at chest height with nothing on it. In the center, a low round platform covered in ivory carpet. Walls in continuous bare warm off-white plaster, ceiling 3 meters high. Palette of warm ivory, sage green and dusty rose, with no saturated colors. Muted true-to-life color, soft contrast, fine natural grain, natural high-end commercial look. Empty location, no people, no reflections of people or camera, no mannequins, no dresses, no text, no signage, no logos, no products, no clutter.</pre></div>
     <div class="ask"><div class="ask-top"><span>Después pedile a Claude</span><button class="copy">Copiar</button></div><pre>Generá en Higgsfield con GPT Image 2 cuatro versiones de esta locación, formato 9:16, 2K.</pre><div class="ask-chk"><b>Revisá antes de seguir:</b> elegí la que tenga los objetos fijos visibles, la entrada a la vista y cero textos o logos. Decile cuál aprobás: esa es la @location de todas las escenas.</div></div>
@@ -445,21 +445,19 @@ Te adjunto la foto del producto.</pre></div>
       <div class="shot"><div class="ts">16–18 s</div><div class="pl">Producto</div>Lucía saca la bolsa y la muestra.</div>
     </div>
     <div class="note"><b>Regla de oro:</b> un solo personaje habla por plano. Si dos hablan en el mismo plano, el modelo mezcla las voces y tenés que regenerar.</div>
-    <p class="use"><b>Cómo usarlo:</b> pegalo en el mismo chat. Claude ya tiene el ángulo, los personajes y la locación, así que solo completá lo que falte.</p>
-    <div class="pc"><div class="pc-top"><div class="tt"><span>Prompt 08</span>Estructurar la historia<span class="tl">· Claude</span></div><button class="copy">Copiar</button></div><pre>Quiero un micro-drama de <span class="ph">[DURACIÓN, ej: 18]</span> segundos en 9:16 para <span class="ph">[PRODUCTO]</span>.
-Ángulo: <span class="ph">[FRASE DEL ÁNGULO]</span>.
-La historia, con mis palabras: <span class="ph">[CONTALA COMO SE LA CONTARÍAS A UN AMIGO]</span>.
-Personajes: @<span class="ph">[NOMBRE 1]</span>, @<span class="ph">[NOMBRE 2]</span>, @<span class="ph">[NOMBRE 3]</span>. Locación: @location. Producto: @product.
-Bloque de continuidad de la locación: <span class="ph">[PEGAR EL BLOQUE DE LA SKILL]</span>.
+    <p class="use"><b>Cómo usarlo:</b> pegalo tal cual en el mismo chat. Claude ya tiene el ángulo, los personajes, las voces y la locación aprobada.</p>
+    <div class="pc"><div class="pc-top"><div class="tt"><span>Prompt 08</span>Estructurar la historia<span class="tl">· Claude</span></div><button class="copy">Copiar</button></div><pre>Ahora armá la historia del anuncio con todo lo que ya definimos en este chat: el ángulo elegido, su situación cotidiana, los personajes con sus voces, la locación aprobada con su bloque de continuidad y el producto.
+Duración total: entre 15 y 20 segundos, en 9:16.
 
 Dividila en escenas de máximo 10 segundos, y cada escena en planos con:
 - rango de tiempo (ej: 0-4s)
 - encuadre (plano general, medio, primer plano)
 - acción
 - como máximo UNA línea de diálogo y de UN solo personaje por plano
-Referenciá personajes, locación y producto siempre con @.
-Empezá cada escena con el bloque de continuidad.
-Prompts en inglés, diálogos en el idioma y con las expresiones de <span class="ph">[PAÍS DEL PÚBLICO]</span>, y que cada personaje mantenga el acento de su voz. El producto aparece solo al final y con la etiqueta legible.</pre></div>
+Referenciá personajes, locación y producto siempre con @ (usá los nombres de los personajes).
+Empezá cada escena con el bloque de continuidad de la locación.
+Prompts en inglés. Diálogos en el idioma y con las expresiones del país del público, y que cada personaje mantenga el acento de su voz.
+El producto aparece solo al final y con la etiqueta legible.</pre></div>
 
     <h3><small>Escena 01</small>El chisme · 0 a 9 segundos</h3>
     <p class="use"><b>Inputs</b> en este orden:</p>
