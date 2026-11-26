@@ -127,6 +127,13 @@ pre .ph{color:var(--gold2)}
 .skill ul{list-style:none;margin:16px 0 22px}
 .skill li{padding:6px 0 6px 26px;position:relative}
 .skill li:before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:800}
+/* ask */
+.ask{background:linear-gradient(180deg,rgba(200,162,76,.10),var(--card));border:1px dashed var(--gold);border-radius:14px;margin:-8px 0 26px;overflow:hidden}
+.ask-top{display:flex;justify-content:space-between;align-items:center;padding:10px 16px}
+.ask-top span{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.ask pre{background:transparent;padding:0 16px 14px;max-height:none;color:var(--cream);font-family:Poppins,sans-serif;font-size:14.5px}
+.ask-chk{border-top:1px solid var(--line);padding:10px 16px;font-size:14px;color:#cfc9bd}
+.ask-chk b{color:var(--cream)}
 /* tabs */
 .tab-btns{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
 .tab{flex:1;min-width:150px;background:var(--card);border:1px solid var(--line);color:var(--cream);font-family:inherit;font-weight:600;font-size:15px;border-radius:12px;padding:10px 14px;cursor:pointer;text-align:left;transition:.2s}
@@ -278,6 +285,7 @@ Con ese ángulo y su situación cotidiana, armame todo lo que necesito para el P
 4. HISTORIA en 5 líneas para un video de <span class="ph">[DURACIÓN, ej: 18]</span> segundos: inicio, giro y cierre con el producto. Los diálogos, en el idioma y con las expresiones de <span class="ph">[PAÍS DEL PÚBLICO]</span>.
 
 Reglas: mismo público y mismos beneficios que antes. No inventes nada que no esté en lo que te di o en el empaque.</pre></div>
+    <div class="ask"><div class="ask-top"><span>Después pedile a Claude</span><button class="copy">Copiar</button></div><pre>Generá en Higgsfield con GPT Image 2 la foto base de [NOMBRE DEL PERSONAJE 1], con el prompt que armaste. De a un personaje: cuando la apruebe, seguís con el siguiente.</pre><div class="ask-chk"><b>Revisá antes de seguir:</b> que cada persona se vea del país de tu público, con piel real, y que las tres se distingan bien entre sí.</div></div>
     <div class="note"><b>Por qué una tienda de novias:</b> si el ángulo es "no te hincha", la historia tiene que pasar donde a una mujer más le importa cómo le queda la ropa.</div>
   </section>
 
@@ -301,6 +309,7 @@ Panel 2 (center): full body, front view, head to toe with the feet fully visible
 Panel 3 (right): full body, back view, head to toe with the feet fully visible, same pose and the same scale as the front view, so the two full-body panels line up at the head and feet. <span class="ph">[QUÉ SE VE DE ESPALDAS: PELO, ESPALDA DE LA ROPA, CALZADO]</span> clearly visible from behind.
 
 Same person, same outfit and same hairstyle in all three panels. Exactly one person per panel, no duplicates, no mirrors, no text, no labels, no logos, no watermark.</pre></div>
+    <div class="ask"><div class="ask-top"><span>Después pedile a Claude</span><button class="copy">Copiar</button></div><pre>Completá los corchetes con lo que se ve en la foto base de [NOMBRE DEL PERSONAJE] y generá su ficha en Higgsfield con GPT Image 2, usando esa foto base como referencia.</pre><div class="ask-chk"><b>Revisá antes de seguir:</b> la misma cara en los 3 paneles, los pies visibles, el fondo gris liso y nada de objetos. Después repetí con el siguiente personaje.</div></div>
 
     <p>Con la ficha lista, le das voz y movimiento. Animás la ficha entera: el panel del rostro habla y los otros dos solo respiran y se mueven. Esa sola referencia le enseña al modelo cómo se ve y cómo suena el personaje, y en las escenas la voz sale consistente.</p>
     <p class="use"><b>Cómo usarlo:</b> en el mismo chat, pegá el prompt y pedile a Claude: <i>"Completá los corchetes con la voz de este personaje y animá su ficha en Higgsfield con Seedance 2.5"</i>. Lo que cambia entre personajes es la expresión y la voz: cada una tiene que sonar distinta.</p>
@@ -315,6 +324,7 @@ Center panel (full body, front): <span class="ph">[her/his]</span> mouth stays c
 Right panel (full body, back): <span class="ph">[she/he]</span> stands relaxed facing away, breathing naturally, shifting <span class="ph">[her/his]</span> weight slightly and turning <span class="ph">[her/his]</span> head a few degrees to the side, <span class="ph">[her/his]</span> hair moving gently. The camera in this panel slowly tilts down from <span class="ph">[her/his]</span> hair and <span class="ph">[PARTE DE ARRIBA DE LA ROPA]</span> to <span class="ph">[PARTE DE ABAJO Y CALZADO]</span>.
 
 All three panels move at the same time, smooth and subtle. Only the left panel speaks. Audio: only <span class="ph">[her/his]</span> voice, no music, no background noise. No text, no logos.</pre></div>
+    <div class="ask"><div class="ask-top"><span>Después pedile a Claude</span><button class="copy">Copiar</button></div><pre>Completá los corchetes con los datos de [NOMBRE DEL PERSONAJE] que armaste en el Prompt 02 y generá en Higgsfield con Seedance 2.5 el video de voz y movimiento, usando su ficha como referencia.</pre><div class="ask-chk"><b>Revisá antes de seguir:</b> que solo hable el panel del rostro, que la voz tenga el acento del país, que la frase se entienda y que suene distinta a los otros personajes. Si está bien: "Aprobado, ahora generá el de [SIGUIENTE PERSONAJE]".</div></div>
 
     <h3><small>Ejemplo real</small>Los 3 personajes del creativo 01</h3>
     <p>Estos son los prompts exactos que usé para el creativo de la portada. Elegí un personaje para ver sus dos prompts.</p>
@@ -406,6 +416,7 @@ All three panels move at the same time, smooth and subtle. Only the left panel s
 Te adjunto la foto del producto.</pre></div>
     <p class="use"><b>Resultado:</b> el prompt que devolvió la skill para este anuncio. Pedile a Claude que lo genere en Higgsfield con GPT Image 2, formato 9:16, 2K.</p>
     <div class="pc"><div class="pc-top"><div class="tt"><span>Prompt 06</span>Locación: tienda de novias<span class="tl">· GPT Image 2</span></div><button class="copy">Copiar</button></div><pre>Photorealistic photograph of an empty bridal boutique fitting area in late morning, calm and intimate, room for three people. Vertical frame shot from just inside the entrance in a three-quarter view, lens at 1.45 m, 30mm full-frame equivalent, f/7, level horizon and straight verticals, the edge of a cream doorframe entering the left border. Warm 3000K LED strips hidden behind the mirror and along the ceiling cove wash the walls softly, the strips never visible as lines; diffused daylight from a tall frosted window on the far wall fills the room, the side near camera about one stop darker, soft open shadows. An open stretch of pale oak floor about three meters wide sits between the sofa and the mirror. On the dominant wall, a tall triple full-length mirror in a thin brushed brass frame, reflecting only the bare opposite wall and the curtain. Beside it, a fitting booth closed by a heavy dusty-rose velvet curtain that falls slightly unevenly. Facing the mirror, a curved two-seat sofa in sage green velvet with a soft dent on one cushion, and a small round side table in walnut at chest height with nothing on it. In the center, a low round platform covered in ivory carpet. Walls in continuous bare warm off-white plaster, ceiling 3 meters high. Palette of warm ivory, sage green and dusty rose, with no saturated colors. Muted true-to-life color, soft contrast, fine natural grain, natural high-end commercial look. Empty location, no people, no reflections of people or camera, no mannequins, no dresses, no text, no signage, no logos, no products, no clutter.</pre></div>
+    <div class="ask"><div class="ask-top"><span>Después pedile a Claude</span><button class="copy">Copiar</button></div><pre>Generá en Higgsfield con GPT Image 2 cuatro versiones de esta locación, formato 9:16, 2K.</pre><div class="ask-chk"><b>Revisá antes de seguir:</b> elegí la que tenga los objetos fijos visibles, la entrada a la vista y cero textos o logos. Decile cuál aprobás: esa es la @location de todas las escenas.</div></div>
     <p class="use"><b>Resultado:</b> el bloque de continuidad. Va al principio de cada prompt de escena.</p>
     <div class="pc"><div class="pc-top"><div class="tt"><span>Prompt 07</span>Bloque de continuidad<span class="tl">· Seedance 2.5</span></div><button class="copy">Copiar</button></div><pre>Keep @location exactly as established: triple full-length mirror next to the dusty-rose velvet curtain, sage green velvet sofa opposite the mirror, low round platform in between, lit by hidden warm LED strips and soft daylight from a frosted window, colors of warm ivory, sage green and dusty rose. No fixed object may be moved, added, removed or changed.</pre></div>
     <div class="note"><b>Tip:</b> generá 4 versiones de la locación y quedate con la que tenga los 4 objetos fijos visibles (espejo, cortina, sillón y podio), la entrada a la vista y cero textos o logos.</div>
@@ -463,6 +474,7 @@ Vertical 9:16, 9 seconds, tripod camera, realistic, ambient room tone only, no m
 0-4s: Medium shot. @Sofi and @Carla sit on the sage green velvet sofa facing the closed dusty-rose velvet curtain. @Sofi leans toward @Carla and whispers in Spanish: "¿Le dijiste que deje la creatina? Mi prima la tomó y el vestido no le cerró." @Carla listens in silence.
 4-7s: Close-up of @Carla, worried. She answers in Spanish: "Ay no... se lo digo ya mismo." @Sofi does not speak.
 7-9s: Medium shot of the dusty-rose velvet curtain starting to slide open slowly. No dialogue.</pre></div>
+    <div class="ask"><div class="ask-top"><span>Después pedile a Claude</span><button class="copy">Copiar</button></div><pre>Generá la escena 01 en Higgsfield con Seedance 2.5 en 480p, con las fichas animadas y la locación aprobada como referencias.</pre><div class="ask-chk"><b>Revisá antes de seguir:</b> diálogo, voces y continuidad. Si está bien: "Generala igual en 1080p". Si no, decile qué falló y que rehaga solo ese fragmento.</div></div>
 
     <h3><small>Escena 02</small>La revelación · 9 a 18 segundos</h3>
     <p class="use"><b>Inputs</b> en este orden:</p>
@@ -481,6 +493,7 @@ Vertical 9:16, 9 seconds, tripod camera, realistic, ambient room tone only, no m
 2-5s: Medium shot of @Lucia turning to them with a calm, knowing smile. She says in Spanish: "Tres meses tomándola. No me hincha." Nobody else speaks.
 5-7s: Close-up of @Sofi after a short pause. She says in Spanish: "...Pásame cómo se llama." Nobody else speaks.
 7-9s: @Lucia takes @product out of a beige handbag on the walnut side table and holds it up toward them at chest height, front label facing the camera, label text and colors exactly as in @product. No dialogue.</pre></div>
+    <div class="ask"><div class="ask-top"><span>Después pedile a Claude</span><button class="copy">Copiar</button></div><pre>Generá la escena 02 en Higgsfield con Seedance 2.5 en 480p, con las fichas, la locación, el producto y las capturas aprobadas de la escena 01 como referencias.</pre><div class="ask-chk"><b>Revisá antes de seguir:</b> que el lugar sea el mismo de la escena 01 y que la etiqueta del producto se lea bien. Si está bien: "Generala igual en 1080p".</div></div>
   </section>
 
   <!-- PASO 04 -->
@@ -509,6 +522,7 @@ Regenerate only this fragment, <span class="ph">[DURACIÓN, ej: 5]</span> second
 <span class="ph">[DESCRIBÍ EL PLANO IGUAL QUE EN EL PROMPT ORIGINAL]</span>
 Change only: <span class="ph">[EL CAMBIO, ej: "@Lucia says 'No me hincha nada' instead of the previous line" / "remove the bouquet from the side table"]</span>.
 Everything else must stay identical to the approved frames: wardrobe, pose, light and position of every object.</pre></div>
+    <div class="ask"><div class="ask-top"><span>Después pedile a Claude</span><button class="copy">Copiar</button></div><pre>Rehacé solo este fragmento en Higgsfield con Seedance 2.5, primero en 480p, con las mismas referencias y las capturas aprobadas.</pre><div class="ask-chk"><b>Revisá antes de seguir:</b> el segundo exacto que estaba mal. Si quedó bien, pedile la versión en 1080p.</div></div>
 
     <h3><small>Montaje</small>Edición en CapCut</h3>
     <ul class="terms">
@@ -594,7 +608,7 @@ document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{
 // copiar prompts
 document.querySelectorAll('.copy').forEach(btn => {
   btn.addEventListener('click', async () => {
-    const text = btn.closest('.pc').querySelector('pre').innerText;
+    const text = btn.closest('.pc, .ask').querySelector('pre').innerText;
     try { await navigator.clipboard.writeText(text); }
     catch (e) {
       const ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta);
