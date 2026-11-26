@@ -38,7 +38,10 @@ h1 em{font-style:normal;color:var(--gold)}
 .chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px}
 .chip b{color:var(--gold)}
 .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.hero-media{margin:44px auto 0;max-width:760px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:14px}
+.hero-media{margin:44px auto 0;max-width:1000px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.vcard{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:12px}
+.vcard .cap{margin-top:10px}
+@media(max-width:760px){.hero-media{grid-template-columns:1fr}}
 .vid{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000;cursor:pointer}
 .vid img{width:100%;height:100%;object-fit:cover;display:block;border-radius:0;transition:.3s}
 .vid:hover img{transform:scale(1.03);filter:brightness(.85)}
@@ -177,12 +180,22 @@ details p{color:#cfc9bd;padding-bottom:16px;margin:0}
       <a class="btn ghost" href="https://drive.google.com/file/d/10DS40AEVMRvTWbVRbpY-z5a0752t6NfD/view?usp=sharing" target="_blank" rel="noopener">Descargar la skill</a>
     </div>
     <div class="hero-media">
-      <div class="vid" id="vid" role="button" tabindex="0" aria-label="Reproducir el creativo">
-        <img src="https://i.ytimg.com/vi/pDJVBPHo0wA/maxresdefault.jpg" onerror="if(this.dataset.f){this.style.display='none'}else{this.dataset.f=1;this.src='https://i.ytimg.com/vi/pDJVBPHo0wA/hqdefault.jpg'}" alt="Creativo final">
-        <span class="play"><svg viewBox="0 0 24 24" width="34" height="34"><path d="M8 5v14l11-7z" fill="#111"/></svg></span>
-      </div>
-      <p class="cap">El creativo final: 18 segundos, 100% IA. Dale play con sonido.</p>
+      <figure class="vcard">
+        <div class="vid" data-yt="pDJVBPHo0wA" role="button" tabindex="0" aria-label="Reproducir creativo 1">
+          <img src="https://i.ytimg.com/vi/pDJVBPHo0wA/maxresdefault.jpg" onerror="if(this.dataset.f){this.style.display='none'}else{this.dataset.f=1;this.src='https://i.ytimg.com/vi/pDJVBPHo0wA/hqdefault.jpg'}" alt="Creativo 1">
+          <span class="play"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M8 5v14l11-7z" fill="#111"/></svg></span>
+        </div>
+        <figcaption class="cap">Creativo 01 · El de esta guía</figcaption>
+      </figure>
+      <figure class="vcard">
+        <div class="vid" data-yt="paZfNH-Gvcg" role="button" tabindex="0" aria-label="Reproducir creativo 2">
+          <img src="https://i.ytimg.com/vi/paZfNH-Gvcg/maxresdefault.jpg" onerror="if(this.dataset.f){this.style.display='none'}else{this.dataset.f=1;this.src='https://i.ytimg.com/vi/paZfNH-Gvcg/hqdefault.jpg'}" alt="Creativo 2">
+          <span class="play"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M8 5v14l11-7z" fill="#111"/></svg></span>
+        </div>
+        <figcaption class="cap">Creativo 02 · Mismo método, otra historia</figcaption>
+      </figure>
     </div>
+    <p class="cap">Hechos 100% con IA. Dale play con sonido.</p>
   </div>
 
   <!-- OVERVIEW -->
@@ -444,14 +457,15 @@ Everything else must stay identical to the approved frames: wardrobe, pose, ligh
 </main>
 
 <script>
-// video: miniatura con play, carga YouTube al hacer clic
-const vid=document.getElementById('vid');
-function playVid(){
-  vid.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/pDJVBPHo0wA?autoplay=1&rel=0&modestbranding=1&playsinline=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen title="Creativo final"></iframe>';
-  vid.style.cursor='default';
-}
-vid.addEventListener('click',playVid,{once:true});
-vid.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();playVid();}},{once:true});
+// videos: miniatura con play, carga YouTube al hacer clic
+document.querySelectorAll('.vid[data-yt]').forEach(v=>{
+  const play=()=>{
+    v.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+v.dataset.yt+'?autoplay=1&rel=0&modestbranding=1&playsinline=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen title="Creativo"></iframe>';
+    v.style.cursor='default';
+  };
+  v.addEventListener('click',play,{once:true});
+  v.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();play();}},{once:true});
+});
 
 // copiar prompts
 document.querySelectorAll('.copy').forEach(btn => {
